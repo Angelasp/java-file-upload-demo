@@ -1,0 +1,6 @@
+.idea
+file
+target
+out
+*.iml
+/vue2_demo/node_modules/

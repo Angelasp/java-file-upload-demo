@@ -1,0 +1,28 @@
+server:
+  port: 8086
+autoconfigure:
+  isMinio: true
+  isRedis: true
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50000MB
+      max-request-size: 50000MB
+  autoconfigure:
+    exclude: org.redisson.spring.starter.RedissonAutoConfiguration
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    database: 0 # Redis数据库索引（默认为0）
+    timeout: 10000 #连接超时时间（毫秒）
+minio:
+  config:
+    ip: 127.0.0.1 #ip地址
+    port: 9000  #  端口号
+    accessKey: admin #  账号
+    secretKey: 12345678 #  密码
+    secure: false #如果是true，则用的是https而不是http,默认值是true
+    bucketName: "test"  # 桶的名字
+    downloadDir: "/test"  #保存到本地的路径
