@@ -1,6 +1,6 @@
-.idea
 file
 target
 out
 *.iml
+*.class
 /vue2_demo/node_modules/
