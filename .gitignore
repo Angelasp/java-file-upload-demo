@@ -1,7 +1,5 @@
-file
+/vue2_demo/node_modules/
+.idea
 target
 out
-*.iml
-*.class
-/vue2_demo/node_modules/
-
+/.idea/
